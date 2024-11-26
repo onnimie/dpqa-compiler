@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "poetry-project"
+version = "0.1.0"
+description = "PQC Project 2024 - Compiling Quantum Circuits for Dynamically Programmable Quantum Array Processors"
+authors = ["onnimiettinen <onnimie@gmail.com>"]
+readme = "README.md"
+packages = [{include = "poetry_project"}]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+cirq = "1.2"
+numpy = "1.23.5"
+matplotlib = "^3.9.2"
+black = {extras = ["jupyter"], version = "^24.10.0"}
+ipykernel = "^6.29.5"
+colorama = "^0.4.6"
+z3 = "^0.2.0"
+z3-solver = "^4.13.3.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
